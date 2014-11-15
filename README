@@ -1,0 +1,22 @@
+Written by Neill Miller (neillm@thecodefactory.org)
+
+This simple systems-up util program takes a list of ip addresses and a
+list of ports on the command line and checks to see if if each of the
+ports is active on each of the servers.
+
+---------------------------------------------
+How to compile (tested on GNU/Linux only):
+---------------------------------------------
+
+gcc systems_up_util.c -o systems_up_util
+
+---------------------------------------------
+How to run:
+---------------------------------------------
+
+./systems_up_util
+Usage: ./systems_up_util -i IP-ADDRESS1,IP-ADDRESS2,IP-ADDRESSN -p PORT1,PORT2,PORTN
+
+Example:
+
+./systems_up_util -i 192.168.1.1,192.168.1.2 -p 80,80
