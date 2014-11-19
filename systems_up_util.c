@@ -70,6 +70,7 @@ int check_on_service(char *ip_address, int port)
             if (connect(s_fd, (struct sockaddr *)&s_addr, sizeof(s_addr)) == 0)
             {
                 printf("Connection success, service is active!\n");
+                close(s_fd);
             }
             else
             {
