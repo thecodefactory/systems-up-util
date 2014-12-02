@@ -36,9 +36,9 @@
 #include <arpa/inet.h>
 #include <errno.h>
 
-#define MAX_IP_LEN       16
-#define MAX_NUM_PORTS    64
-#define MAX_NUM_HOSTS    64
+#define MAX_IP_LEN       32
+#define MAX_NUM_PORTS   256
+#define MAX_NUM_HOSTS   256
 #define MAX_COMMAND_LEN 512
 #define MAX_MSG_LEN     512
 
